@@ -48,3 +48,15 @@ func();
 //ye sach hai func ke khatam hone pe apka func and uska variables khtm hojaate hai par jab bhi closure banta hai to aapka fnc aur uske variables ek backline bnaya jaata hai aur uska naam hota hai
 
 //Use cases of this Private 
+function countForMe(){
+    let c = 0;
+    return function(){
+        c++;
+        console.log(c);
+    }
+}
+let fnc = countForMe;
+fnc();
+fnc();
+fnc();
+
