@@ -31,4 +31,20 @@ function defg(){
 }
 defg();
 
-// 
+// closures: Hote hai functions jo ki kisi parent function ke andar ho
+//           aur andar wala function return ho raha ho and returning use 
+//           kare parent function ka koi variable
+
+function abcd(){
+    let a = 12;
+    return function(){
+        console.log(a)
+    }
+}
+
+let func = abcd();
+func();
+
+//ye sach hai func ke khatam hone pe apka func and uska variables khtm hojaate hai par jab bhi closure banta hai to aapka fnc aur uske variables ek backline bnaya jaata hai aur uska naam hota hai
+
+//Use cases of this Private 
